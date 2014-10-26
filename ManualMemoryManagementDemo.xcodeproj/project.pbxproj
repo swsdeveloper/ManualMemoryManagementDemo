@@ -14,6 +14,7 @@
 		0AE09DD019FD9DE4000F1E62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE09DCF19FD9DE4000F1E62 /* Images.xcassets */; };
 		0AE09DD319FD9DE4000F1E62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE09DD119FD9DE4000F1E62 /* LaunchScreen.xib */; };
 		0AE09DDF19FD9DE4000F1E62 /* ManualMemoryManagementDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE09DDE19FD9DE4000F1E62 /* ManualMemoryManagementDemoTests.m */; };
+		0AE09DEA19FD9E49000F1E62 /* CustomThing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE09DE919FD9E49000F1E62 /* CustomThing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		0AE09DD819FD9DE4000F1E62 /* ManualMemoryManagementDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManualMemoryManagementDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE09DDD19FD9DE4000F1E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AE09DDE19FD9DE4000F1E62 /* ManualMemoryManagementDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualMemoryManagementDemoTests.m; sourceTree = "<group>"; };
+		0AE09DE819FD9E49000F1E62 /* CustomThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomThing.h; path = ../CustomThing.h; sourceTree = "<group>"; };
+		0AE09DE919FD9E49000F1E62 /* CustomThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomThing.m; path = ../CustomThing.m; sourceTree = "<group>"; };
+		0AE09DEB19FDAF1D000F1E62 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "../../../Common Files/Constants.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,9 @@
 		0AE09DC119FD9DE4000F1E62 /* ManualMemoryManagementDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0AE09DEB19FDAF1D000F1E62 /* Constants.h */,
+				0AE09DE819FD9E49000F1E62 /* CustomThing.h */,
+				0AE09DE919FD9E49000F1E62 /* CustomThing.m */,
 				0AE09DC619FD9DE4000F1E62 /* AppDelegate.h */,
 				0AE09DC719FD9DE4000F1E62 /* AppDelegate.m */,
 				0AE09DC919FD9DE4000F1E62 /* ViewController.h */,
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE09DCB19FD9DE4000F1E62 /* ViewController.m in Sources */,
+				0AE09DEA19FD9E49000F1E62 /* CustomThing.m in Sources */,
 				0AE09DC819FD9DE4000F1E62 /* AppDelegate.m in Sources */,
 				0AE09DC519FD9DE4000F1E62 /* main.m in Sources */,
 			);
@@ -343,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = ManualMemoryManagementDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = ManualMemoryManagementDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
